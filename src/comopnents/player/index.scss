@@ -1,0 +1,21 @@
+.player {
+    .player-c {
+      min-height: 18rem;
+      width: 100vw;
+    }
+
+  .player-info {
+    padding: 1rem;
+    background: black;
+    color: #d0d0d0;
+    font-size: 1.2rem;
+
+    .player-info-box {
+      margin: 0.5rem 0;
+    }
+  }
+  .xgplayer-skin-default.xgplayer-rotate-fullscreen {
+    z-index: 9;
+  }
+}
+

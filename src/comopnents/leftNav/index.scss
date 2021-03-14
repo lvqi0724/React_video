@@ -1,0 +1,72 @@
+@keyframes myanima {
+  from {
+    left: -10rem;
+  }
+
+  to {
+    left: 0rem;
+  }
+}
+
+@keyframes myanima1 {
+  from {
+    left: 0rem;
+  }
+
+  to {
+    left: -10rem;
+  }
+}
+
+.leftNav {
+  display: block;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 8;
+  min-height: 100vh;
+  background-color: rgba($color: #1f1f1f, $alpha: 0.4);
+
+  .leftNav-a1 {
+    animation: myanima .3s;
+  }
+  .leftNav-a2 {
+    animation: myanima1 .3s;
+  }
+
+  .leftNav-box {
+    width: 10rem;
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #272323;
+
+    .leftNav-tit {
+      height: 10rem;
+      padding: 1rem 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 50%;
+        display: block;
+      }
+    }
+    .leftNav-jump {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .leftNav-jump-c  {
+        font-size: 1.2rem;
+        color: #989898;
+        margin: .4rem 0;
+      }
+    }
+  }
+
+
+}

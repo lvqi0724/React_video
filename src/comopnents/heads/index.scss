@@ -1,0 +1,41 @@
+.headbar {
+  width: 100%;
+  height: 4.4rem;
+  background-color: #1f1f1f;
+  position: relative;
+
+  .headbar-box {
+    display: flex;
+    height: 100%;
+    padding: 0 1rem;
+    align-items: center;
+    justify-content: space-between;
+    .headbar-menu {
+      height: 2.5rem;
+      img {
+        height: 100%;
+      }
+    }
+    .headbar-search {
+      height: 2.5rem;
+      img {
+        height: 100%;
+      }
+    }
+
+    .headbar-tit {
+
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      h1 {
+        font-size: 1.6rem;
+        color: white;
+      }
+    }
+
+  }
+
+}

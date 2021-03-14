@@ -1,0 +1,11 @@
+.classfiyList {
+  background: black;
+  .classfiyList-box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .classfiyList-box-c {
+    margin: 1rem 0 0 3.3vw;
+  }
+}

@@ -1,0 +1,13 @@
+.detail {
+  background: black;
+  .detail-more {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+    .detail-more-box {
+      margin: 1rem 0 0 3.3vw;
+    }
+  }
+}

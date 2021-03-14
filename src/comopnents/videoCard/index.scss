@@ -1,0 +1,65 @@
+.videoCard {
+  width: 45vw;
+  height: 23rem;
+  border-radius: 10px;
+
+  .videoCard-c {
+    height: 23rem;
+    position: relative;
+
+    img {
+      height: 23rem;
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+    }
+
+    .videoCard-box {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: rgba(179, 179, 179, 0.6);
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+
+      .videoCard-info {
+        height: 6rem;
+        padding: 0 0.2rem;
+
+        .videoCard-title {
+          height: 2rem;
+          line-height: 2rem;
+          font-size: 1.2rem;
+          color: #4c4545;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        .videoCard-t {
+          height: 2rem;
+          line-height: 2rem;
+          font-size: 1rem;
+          color: #525252;
+        }
+
+        .videoCard-type {
+          height: 2rem;
+          line-height: 2rem;
+          font-size: 1rem;
+          color: #3e3e3e;
+        }
+
+      }
+
+      .videoCard-t {
+        height: 2rem;
+        width: 100%;
+        line-height: 2rem;
+        font-size: 1.4rem;
+      }
+    }
+
+  }
+}

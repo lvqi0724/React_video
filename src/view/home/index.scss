@@ -1,0 +1,17 @@
+.home {
+  background: #1f1f1f;
+  .home-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    .home-list-box {
+      margin: 1rem 0 0;
+      border-radius: 10px;
+    }
+  }
+  .home-bottom {
+    margin-top: 2rem;
+  }
+}

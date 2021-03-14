@@ -1,0 +1,13 @@
+.initVideoCard {
+  width: 45vw;
+  height: 23rem;
+  border-radius: 10px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 100%;
+    display: block;
+  }
+}

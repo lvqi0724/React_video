@@ -1,0 +1,97 @@
+.compensationHeight {
+  min-height: calc(100vh - 4.4rem);
+  position: relative;
+  z-index: 1;
+  .searchInput {
+    width: 100%;
+    height: 5rem;
+    background: black;
+    display: flex;
+    justify-content: center;
+
+    .searchInput-i {
+      padding: 1rem 0;
+
+      input {
+        width: 20rem;
+        height: 3rem;
+        padding: 0 0 0 2rem;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        background: white;
+        outline: none;
+        border: none;
+      }
+    }
+
+    .searchInput-b {
+      margin: 1rem 0;
+      line-height: 3rem;
+      text-align: center;
+      width: 20%;
+      height: 3rem;
+      background: white;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      color: black;
+    }
+  }
+
+  .searchRes {
+
+    width: 100%;
+    background: black;
+    .searchRes-box {
+      position: relative;
+
+      border-top: 1px solid #565656;
+      .searchRes-box-show {
+
+        .searchRes-box-show-c {
+          line-height: 2rem;
+          padding: 1rem 2rem;
+          overflow:hidden;//超出一行文字自动隐藏
+          text-overflow:ellipsis;//文字隐藏后添加省略号
+          white-space:nowrap;//强制不换行
+          color: white;
+          border-bottom: 1px solid #565656;
+        }
+        .searchRes-box-show-c-close {
+          text-align: center;
+          color: #f1e9e9;
+          background: #11104c;
+        }
+      }
+      .searchRes-box-init {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 10rem;
+        }
+      }
+    }
+  }
+}
+
+
+
+.content-enter {
+  opacity: 0;
+  transform: translateY(-200%);
+}
+.content-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity cubic-bezier(0.17, 0.67, 0.28, 1) 1000ms,
+  transform cubic-bezier(0.17, 0.67, 0.28, 1) 1000ms;
+}
+.content-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+.content-exit-active {
+  opacity: 0;
+  transform: translateY(-200%);
+  transition: opacity 1000ms, transform 1000ms;
+}
